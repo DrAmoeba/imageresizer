@@ -1,9 +1,8 @@
-# Imageresize - Resize and change Format of any Image
+# Imageresize - Resize and change format of any Image
 
 
 Example, resize jpeg to 320x240:
-./imageresize -i test.jpg -o test2.jpg -f jpeg -x 320 -y 240 -q 100 
-
+./imageresize -i test.jpg -o test2.jpg -f jpeg -x 320 -y 240 -q 100
 
 ./imageresize --help
 Usage:

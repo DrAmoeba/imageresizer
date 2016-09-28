@@ -70,11 +70,10 @@ main(int argc, char **argv)
             return ;
         }
 
+        if (inname==NULL) return;
         image = gdk_pixbuf_new_from_file_at_size (inname, screen_w, screen_h, 0);
-        if (image == NULL) {
-           return;
-        }
-
+        if (image == NULL) return;
+        
         //cairo_surface = cairo_image_surface_create (CAIRO_FORMAT_RGB24, screen_w, screen_h);
         //cr = cairo_create (cairo_surface);
         //gdk_cairo_set_source_pixbuf(cr, image, 0, 0);
